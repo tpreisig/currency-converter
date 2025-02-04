@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Play:wght@400;700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Roboto Flex", sans-serif;
+}
+
+body {
+  background: linear-gradient(80deg, rgb(3, 169, 136), rgb(119, 3, 119));
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#root {
+  width: 100%;
+}
+
+.currency-converter {
+  color: rgb(182, 255, 16);
+  border: 2px solid rgb(182, 249, 73);
+  margin: 0 auto;
+  padding: 40px 30px 50px;
+  background: rgba(155, 162, 6, 0.3);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+  border-radius: 9px;
+  max-width: 420px;
+}
+
+.currency-converter .converter-title {
+  color: rgb(182, 249, 73);
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 12px;
+  border-bottom: 1px solid plum;
+}
+
+.currency-converter .converter-form {
+  margin-top: 45px;
+}
+.converter-form .form-group {
+  display: flex;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+
+.converter-form .form-group .form-label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: rgb(182, 249, 73);
+  margin-bottom: 10px;
+}
