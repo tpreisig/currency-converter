@@ -40,7 +40,7 @@ body {
   font-weight: 700;
   text-align: center;
   padding-bottom: 12px;
-  border-bottom: 1px solid plum;
+  border-bottom: 1px solid rgb(249, 216, 222);
 }
 
 .currency-converter .converter-form {
@@ -58,4 +58,94 @@ body {
   font-weight: 200;
   color: rgb(182, 249, 73);
   margin-bottom: 10px;
+}
+
+.converter-form .form-group .form-input {
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color: rgb(12, 12, 122);
+  padding: 0 5px;
+  min-height: 48px;
+  background: rgba(255, 220, 255, 0.9);
+}
+
+.converter-form .form-currency-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-currency-group .currency-select {
+  display: flex;
+  padding: 0 10px;
+  min-height: 45px;
+  align-items: center;
+  border-radius: 6px;
+  background: rgba(255, 220, 255, 0.9);
+}
+
+.form-currency-group .currency-select img {
+  width: 25px;
+}
+
+.form-currency-group .currency-select .currency-dropdown {
+  border: none;
+  outline: none;
+  background: none;
+  color: rgb(12, 12, 122);
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.form-currency-group .currency-select .currency-dropdown option {
+  font-weight: 800;
+}
+
+.form-currency-group .exchange-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 2rem;
+  margin-top: 30px;
+  transition: all 0.3s ease;
+}
+.exchange-icon:hover {
+  color: aqua;
+}
+
+.converter-form .submit-button {
+  width: 100%;
+  border: none;
+  outline: none;
+  min-height: 50px;
+  border-radius: 6px;
+  background: rgb(161, 25, 161);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 10px;
+}
+
+.submit-button:hover {
+  background: rgb(161, 25, 161);
+  transform: scale(1.03);
+}
+
+.converter-form .exchange-result-rate {
+  color: aqua;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 14px;
+  border: 1px solid rgba(0, 255, 255, 0.5);
 }
