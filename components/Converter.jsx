@@ -27,9 +27,6 @@ const Converter = () => {
         const data = await response.json();
         const rate = (data.conversion_rate * amount).toFixed(2);
         setResult(`${amount} ${fromCurrency} = ${rate} ${toCurrency}`);
-        console.log(data);
-        console.log(rate);
-
     } catch(error) {
       console.error(error);
     }
@@ -80,3 +77,4 @@ const Converter = () => {
 }
 
 export default Converter
+
