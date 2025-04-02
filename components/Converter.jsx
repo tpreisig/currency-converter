@@ -19,7 +19,6 @@ const Converter = () => {
   const getExchangeRate = async () => {
     const API_KEY = import.meta.env.VITE_API_KEY;
     const API_URI = `https://v6.exchangerate-api.com/v6/${API_KEY}/pair/${fromCurrency}/${toCurrency}`;
-    // const API_URI = `https://v6.exchangerate-api.com/v6/${API_KEY}/latest/CHF`;
 
     try {
         const response = await fetch(API_URI);
@@ -32,7 +31,6 @@ const Converter = () => {
     }
   }
 
-  // Handle form submission
   const handleFormSubmit = (e) => {
     e.preventDefault();
     getExchangeRate();
