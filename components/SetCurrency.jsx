@@ -1,8 +1,8 @@
+/* eslint-disable react/prop-types */
 import currencyCodes from '../data/currencyCodes.json'
 
 
 const SetCurrency = ({ selectedCurrency, handleCurrency }) => {
-    // Extract the country code from the selected currency code and use the country code to fetch flag from api
     const countryCode = selectedCurrency.substring(0, 2).toLowerCase();
     console.log(countryCode);
 
