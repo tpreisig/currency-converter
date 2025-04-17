@@ -53,7 +53,7 @@ Built with React hooks and a clean UI, it’s perfect for quick conversions or a
 - **State Management:** Uses `useState` for `amount`, `fromCurrency`, and `toCurrency`, and `result`.
 - **API Fetching:** An async function `getExchangeRate` retrieves currency rates and updates `result`.
 - **Effect Hook:** First fetch is triggered by `useEffect` on mount.
-- **Event Handling:** Currency swap and form submission are handle with clean and reusable logic.
+- **Event Handling:** Currency swap and form submission are handled with clean and reusable logic.
 
 ## License
 
