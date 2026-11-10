@@ -1,4 +1,4 @@
-[
+export const currencyCodes = [
     "AED", "AFN", "ALL", "AMD", "ANG", "AOA", "ARS", "AUD", "AWG", "AZN",
     "BAM", "BBD", "BDT", "BGN", "BHD", "BIF", "BMD", "BND", "BOB", "BRL",
     "BSD", "BTN", "BWP", "BYN", "BZD", "CAD", "CDF", "CHF", "CLP", "CNY",
@@ -14,5 +14,11 @@
     "SBD", "SCR", "SDG", "SEK", "SGD", "SHP", "SLE", "SLL", "SOS", "SRD",
     "SSP", "STN", "SYP", "SZL", "THB", "TJS", "TMT", "TND", "TOP", "TRY",
     "TTD", "TVD", "TWD", "TZS", "UAH", "UGX", "USD", "UYU", "UZS", "VES",
-    "VND", "VUV", "WST", "YER", "ZAR", "ZMW","ZWL"
-]
+    "VND", "VUV", "WST", "YER", "ZAR", "ZMW", "ZWL",
+] as const
+
+export type CurrencyCode = (typeof currencyCodes)[number]
+
+export function isCurrencyCode(value: string): value is CurrencyCode {
+    return (currencyCodes as readonly string[]).includes(value)
+}
