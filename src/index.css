@@ -115,7 +115,8 @@ body {
   transition: all 0.3s ease;
 }
 .exchange-icon:hover {
-  color: aqua;
+  color: purple;
+  transform: scale(1.1);
 }
 
 .converter-form .submit-button {
